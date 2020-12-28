@@ -1,0 +1,83 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - faq
+  - thanks
+
+responses:
+
+  utter_greet:
+  - text: "Hey! I'm Zemaion how can i assist you ?"
+  - text: "Sup! I'm Zemaion i'll assist you with ?"
+  - text: "Ayo! This is Zemaion and i'll be answering all of your queries regarding navigation"
+
+  utter_goodbye:
+  - text: Goodbye!
+  - text: Bye!
+  - text: Ciao!
+  - text: Bye, was nice talking to you!
+  - text: Bye bye!
+
+  utter_iamabot:
+  - text: "I am a Zemaion, powered by NearBy."
+  - text: "I am a Zemaion, powered by the NearBy."
+
+  utter_affirm:
+  - text: "Great, carry on!"
+  - text: "cool, Go on!"
+
+  utter_deny:
+  - text: "This is all that i can assist you with"
+  - text: "It's all that i can provide you"
+  - text: "Sorry, that's all the info I've got on about this 😕"
+
+  utter_out_of_scope/other:
+  - text: I'm sorry, I can't handle that request.
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  - text: I'm sorry, I can only serve you with navigation related queries.
+  - text: I'm sorry, I'm bound to provide navigation details.
+  - text: I'm sorry, I don't deal with these kind of queries. 
+
+  utter_out_of_scope/non_english:
+  - text: "Sorry, I understand english language only"
+
+  utter_please_rephrase:
+  - text: I'm sorry, I can't handle that request.
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  - text: I'm sorry, I can only serve you with navigation related queries.
+  - text: I'm sorry, I'm bound to provide navigation details.
+  - text: I'm sorry, I don't deal with these kind of queries. 
+  - text: Sorry, I didn't get that 🤷. Could you please rephrase?
+  
+  utter_faq/query_how_to_use_app:
+  - text: "1.Firstly,Don't worry sir/ma'am it's not hard that to get hands on our app.\n2.Go to search bar hover above
+          over just search whatever,whereever you want to.\n3.for any further assistant i'm ready to assist you.\n" 
+ 
+  utter_faq/query_what_this_app_is_for:
+  - text: "Our app act as great guide in case if someone needs to search any nearby place.\n"  
+  
+  utter_faq/query_how_to_register:
+  - text: "1.Firstly, On introductry page you will be asked to login or register yourself\n2.if you already
+          created account\nthen don't mind it just login with your credential to access this app.\n3.If not, then
+          you are required to create account and as soon as\nyou proceed furthur will be recieving an email for
+          furthur verification.\n"
+  
+  utter_did_that_help:
+  - text: "Did that help you ?"
+  - text: "Was that information was sufficient ?"
+  - text: "Was it helpful ?"
+  
+  utter_noworries:
+  - text: No worries!
+  - text: You're welcome!
+  - text: I'm happy to help. 
+
+  
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
